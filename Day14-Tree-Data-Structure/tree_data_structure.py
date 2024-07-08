@@ -46,9 +46,9 @@ def visualize_bfs_order(root, order):
     dot = Graph()  # Initialize a new Graphviz graph
 
     # Create node labels with traversal order information
-    node_labels = {node.val: f'{node.val}' for node in order}
+    node_labels = {node.val: f"{node.val}" for node in order}
     for i, node in enumerate(order):
-        node_labels[node.val] = f'{node.val} ({i+1})'
+        node_labels[node.val] = f"{node.val} ({i+1})"
 
     # Recursive function to add edges and labels to the graph
     def add_edges_with_labels(dot, node):
@@ -198,7 +198,7 @@ def deletion(root, key):
     return root  # Return the updated root of the tree
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     root = None
     # Insertion of nodes
     values = [1, 2, 3, 4, 5]
